@@ -32,8 +32,6 @@ end
 
 class Employee < ActiveRecord::Base
   belongs_to :store
-  validates :first_name, presence: true
-  validates :last_name, presence: true
 end
 
 @store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
