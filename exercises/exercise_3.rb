@@ -12,4 +12,6 @@ Exercise 3: Delete the third store
   Verify that the store has been deleted by again outputting (putsing) the count (as you did in Exercise 1.)
 =end
 
-
+@store3 = Store.find(3)
+@store3.destroy
+puts "The number of stores in the database: #{Store.count}."
