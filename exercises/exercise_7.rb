@@ -59,7 +59,7 @@ if new_store.valid?
   puts "Success! Store '#{store_name}' created."
 else
   puts "Failed to create store. Error:"
-  new_store.errors.full_messages.each do |error_msg|
-    puts " #{error_msg}."
+  new_store.errors.full_messages.each do |err_msg|
+    puts " #{err_msg}."
   end
 end
