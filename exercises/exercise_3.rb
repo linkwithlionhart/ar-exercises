@@ -14,4 +14,5 @@ Exercise 3: Delete the third store
 
 @store3 = Store.find(3)
 @store3.destroy
+
 puts "The number of stores in the database: #{Store.count}."
