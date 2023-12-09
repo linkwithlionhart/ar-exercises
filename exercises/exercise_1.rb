@@ -12,26 +12,25 @@ Exercise 1: Create 3 stores
   Output (puts) the number of the stores using ActiveRecord's count method, to ensure that there are three stores in the database.
 =end
 
-store_1 = Store.create(
+Store.create(
   name: 'Burnaby',
   annual_revenue: 300000,
   mens_apparel: true,
   womens_apparel: true
 )
 
-store_2 = Store.create(
+Store.create(
   name: 'Richmond',
   annual_revenue: 1260000,
   mens_apparel: false,
   womens_apparel: true
 )
 
-store_3 = Store.create(
+Store.create(
   name: 'Gastown',
   annual_revenue: 190000,
   mens_apparel: true,
   womens_apparel: false
 )
 
-number_of_stores = Store.count
 puts "The number of stores in the database: #{Store.count}."
